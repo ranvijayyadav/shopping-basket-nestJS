@@ -28,7 +28,9 @@ export class ShoppingService {
 
         for(const[item, count] of Object.entries(itemCount)) {
             const rule = this.priceRules[item];
+            console.log(rule, item, "Idindividaul item and rule");
             if(!rule) {
+                throw new Error(`Item ${item} is not valid`);
                 continue
             }
 

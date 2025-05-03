@@ -10,7 +10,9 @@ export class ShoppingController {
     calculateBasket(@Body() basketDto: CalculateBasketDto){
         try {
             console.log(basketDto, "Input data");
-            return this.shoppingService.calculateBasketToatal(basketDto.items);
+            let result = this.shoppingService.calculateBasketToatal(basketDto.items);
+            console.log("result", result);
+            return  result;//this.shoppingService.calculateBasketToatal(basketDto.items);
         } catch (error) {
             throw new BadRequestException(error.message);
         }
