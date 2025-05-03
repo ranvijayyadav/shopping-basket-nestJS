@@ -8,6 +8,10 @@ Steps to run/test
  
     ```npm install```
 
+- Run unit test
+  
+  ``` npm run test```
+
 - Start app 
 
     ``` npm run start```
@@ -24,7 +28,7 @@ Steps to run/test
       }
       ~~~
   - Header
-  
+
     ``Content-Type: application/json ``
 
 
